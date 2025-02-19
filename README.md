@@ -113,3 +113,8 @@ The test-data directory contains test data files for the project:
 
 The utils directory contains test data files for the project:
 - `string-util.ts`: Contains function to generate randomized test data
+
+### Reporting
+
+With the integration of Github Actions, after every test run, a deployment of gh-pages is triggered.
+Lastest cucumber report can then be viewed here: [![Latest Cucumber report(https://img.shields.io/badge/Live%20Demo-Click%20Here-blue)](https://sotatek-duyle.github.io/myer-test-automation/cucumber-report.html)
