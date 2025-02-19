@@ -114,6 +114,16 @@ The test-data directory contains test data files for the project:
 The utils directory contains test data files for the project:
 - `string-util.ts`: Contains function to generate randomized test data
 
+### Github Actions
+Workflow "Playwright Tests" is responsible for running Playwright-Cucumber test. It is configured to be run on manual trigger and on schedule (00:00 AM GMT+0)
+
+Steps to run:
+1. Go to Github > Github Actions
+2. Click workflow "Playwright Tests"
+3. Click Run workflow > Run workflow
+
+Logs can be observed inside each workflow run.
+
 ### Reporting
 
 With the integration of Github Actions, after every test run, a deployment of gh-pages is triggered.
