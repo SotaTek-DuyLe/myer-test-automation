@@ -47,10 +47,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: cucumber-report
-          path: public
+          path: docs
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./docs
