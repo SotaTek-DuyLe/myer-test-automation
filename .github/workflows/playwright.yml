@@ -35,7 +35,6 @@ jobs:
         retention-days: 30
   
   deploy-report:
-    needs: test  # Runs after the test job
     runs-on: ubuntu-latest
 
     steps:
