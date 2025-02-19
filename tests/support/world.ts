@@ -8,12 +8,18 @@ import config from "../../dist/playwright.config.js";
 export class CustomWorld extends World {
     browser!: Browser;
     page!: Page;
+    baseUrl!: string;
+
+    constructor(options: any) {
+        super(options);
+        this.baseUrl = options.parameters.baseUrl;
+    }
 
     async openBrowser() {
         this.browser = await chromium.launch(config.use?.launchOptions ?? {});
         const context = await this.browser.newContext({ viewport: null });
         this.page = await context.newPage();
-        await this.page.goto('https://www.myer.com.au/');
+        await this.page.goto(this.baseUrl);
     }
 
     async closeBrowser() {

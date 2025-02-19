@@ -1,5 +1,8 @@
 {
     "default": {
+        "worldParameters": {
+            "baseUrl": "https://www.myer.com.au/"
+        },
         "paths": [
             "tests/features/"
         ],
