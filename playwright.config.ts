@@ -32,22 +32,22 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     launchOptions: {
-      headless: false,
+      headless: true,
       args: ["--start-maximized"]
     },
     actionTimeout: 20000,
     navigationTimeout: 10000,
   },
   expect: {
-     timeout: 30000
-    },
+    timeout: 30000
+  },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
       use: { viewport: null },
-      
+
     },
 
     // {
