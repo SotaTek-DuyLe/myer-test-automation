@@ -5,11 +5,6 @@ on:
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   test:
     timeout-minutes: 60
