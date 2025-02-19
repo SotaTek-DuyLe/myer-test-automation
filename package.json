@@ -1,0 +1,21 @@
+{
+  "name": "myer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npx tsc playwright.config.ts --outDir ./dist",
+    "test": "cucumber-js test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.4",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0"
+  }
+}
