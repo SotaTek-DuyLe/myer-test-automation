@@ -35,6 +35,8 @@ jobs:
         retention-days: 30
   
   deploy-report:
+    needs: test
+    if: always()
     runs-on: ubuntu-latest
 
     steps:
